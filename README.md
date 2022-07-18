@@ -28,3 +28,10 @@ cd server && npm install --save sequelize mysql2 && npm install --save -D nodemo
 Instalar todas as dependências com `npm install`.
 
 Rodar o servidor com o `npm run dev`.
+
+
+No Workbench, após ativar o MySQL via xampp, executar a seguinte query para criar nosso BD;
+
+```sql
+CREATE DATABASE pratica_sequelize_4;
+```
