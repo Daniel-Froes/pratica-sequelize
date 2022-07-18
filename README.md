@@ -2,7 +2,7 @@
 
 Prática de Sequelize (migrations, seeders, associations, etc.), Express, NodeJS.
 
-##Iniciando o projeto
+## Iniciando o projeto
 
 ```sh
 express server --view=ejs
@@ -16,12 +16,12 @@ cd server && npm install --save sequelize mysql2 && npm install --save -D nodemo
 
 ```json
 {
-  //....
+  //...
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www"
   }
-  //..
+  //...
 }
 ```
 
@@ -109,7 +109,7 @@ npx sequelize-cli model:generate --name Todo --attributes titulo:string,resumo:s
 Veja que não os models só foram criados, como também o próprio sequelize criou os campos id, createdAt e updatedAt nas migrations.
 
 
-| IMPORTANTE: repare que temos nos arquivos de migrations os métodos `up` e `down` - o método `up` é executado quando rodamos uma migrations enquanto o método `down` é executado quando desfazemos (UNDO) uma migration. Por isso é importante que todo método `down` realmente desfaça o que está sendo feito pelo método `up` (no caso, `up` cria uma tabela e o método `down`  a apaga ) 
+| IMPORTANTE: repare que temos nos arquivos de migrations os métodos `up` e `down` - o método `up` é executado quando rodamos uma migrations enquanto o método `down` é executado quando desfazemos (UNDO) uma migration. Por isso é importante que todo método `down` realmente desfaça o que está sendo feito pelo método `up` (no caso, `up` cria uma tabela e o método `down`  a apaga ) |
 
 Para rodarmos  a migration, vamos executar no terminal o seguinte comando(dentro da pasta server):
 
