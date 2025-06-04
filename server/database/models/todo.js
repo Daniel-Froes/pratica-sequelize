@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
-  TODO.init({
+  Todo.init({
     titulo: DataTypes.STRING,
     resumo: DataTypes.STRING,
     descricao: DataTypes.STRING
@@ -21,5 +21,5 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Todo',
   });
-  return TODO;
+  return Todo;
 };
